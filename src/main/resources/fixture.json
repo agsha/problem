@@ -1,0 +1,49 @@
+
+
+
+
+!com.Nested2,nested2
+
+{
+
+c:c
+
+d:d
+
+}
+
+!com.Nested,nested
+
+{
+ a:a
+ b:b
+ nested2:!nested2
+}
+
+!com.example.Customer,customer1
+
+{
+
+    id:CUST1
+
+    name:"john"
+
+    email:"john@example.com"
+
+    nested:!nested
+
+}
+
+
+!com.example.Order,order1
+
+{
+
+  id:"OD123"
+
+  name:"order1"
+
+  Customer:!customer1
+  nested2:!nested2
+
+}
